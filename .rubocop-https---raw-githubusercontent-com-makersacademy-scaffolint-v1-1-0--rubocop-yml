@@ -289,6 +289,8 @@ Layout/FirstArgumentIndentation:
   Enabled: false
 Lint/FlipFlop:
   Enabled: false
+Lint/MissingSuper:
+  Enabled: false
 Style/For:
   Enabled: false
 Style/FormatString:
@@ -336,8 +338,6 @@ Style/MethodCallWithoutArgsParentheses:
 Style/MethodCalledOnDoEndBlock:
   Enabled: false
 Style/MethodDefParentheses:
-  Enabled: false
-Lint/MissingSuper:
   Enabled: false
 Style/MissingRespondToMissing:
   Enabled: false

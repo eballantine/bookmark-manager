@@ -2,7 +2,7 @@ require 'bookmark'
 
 describe Bookmark do 
   describe '.all' do
-    it 'returns an array of bookmarks' do
+    it 'returns saved bookmarks' do
       connection = PG.connect(dbname: 'bookmark_manager_test')
 
       # Add the test data

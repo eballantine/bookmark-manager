@@ -1,5 +1,5 @@
 feature 'Viewing bookmarks' do
-  scenario 'A user can see bookmarks' do
+  scenario 'Shows a list of saved bookmarks' do
     connection = PG.connect(dbname: 'bookmark_manager_test')
 
     # Add the test data
