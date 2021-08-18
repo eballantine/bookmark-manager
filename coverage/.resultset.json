@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/eb/Projects/week4/bookmark-manager/spec/bookmark_spec.rb": {
+      "/Users/edward/Projects/week_four/bookmark-manager/spec/bookmark_spec.rb": {
         "lines": [
           1,
           null,
@@ -25,15 +25,27 @@
           null
         ]
       },
-      "/Users/eb/Projects/week4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
+      "/Users/edward/Projects/week_four/bookmark-manager/spec/features/index_page_spec.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/edward/Projects/week_four/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
+        "lines": [
           1,
           1,
           1,
@@ -53,6 +65,6 @@
         ]
       }
     },
-    "timestamp": 1629300149
+    "timestamp": 1629301713
   }
 }

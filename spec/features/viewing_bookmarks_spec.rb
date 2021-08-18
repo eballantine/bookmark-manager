@@ -1,10 +1,3 @@
-feature 'Index page' do
-  it "expects the page to have title" do
-    visit('/')
-    expect(page).to have_content 'Bookmark Manager'
-  end
-end
-
 feature 'Viewing bookmarks' do
   scenario 'A user can see bookmarks' do
     connection = PG.connect(dbname: 'bookmark_manager_test')

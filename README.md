@@ -19,5 +19,9 @@ As a user
 I want to see a list of all my bookmarks
 So that I can look through them all to find something I've saved
 
+As a user
+I want to be able to add bookmarks
+So I can recall them later on when I've forgotten them
+
 ![Screenshot](user_story_1_rough_model.png)
 
