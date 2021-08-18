@@ -17,4 +17,11 @@ describe Bookmark do
       expect(bookmark).to include "http://www.google.com"
     end
   end
+
+  describe '.add' do
+    it 'adds a bookmark to saved bookmarks' do
+      Bookmark.add("http://testing.com")
+      expect(Bookmark.all).to contain_exactly("http://testing.com")
+    end
+  end
 end
