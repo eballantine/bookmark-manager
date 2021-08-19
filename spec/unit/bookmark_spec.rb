@@ -15,9 +15,10 @@ describe Bookmark do
 
   describe '#self.add' do
     it 'adds a bookmark to saved bookmarks' do
-      Bookmark.add("http://testing.com", "Test Title")
-      expect(Bookmark.all.last.url).to eq "http://testing.com"
-      expect(Bookmark.all.last.title).to eq "Test Title"
+      bookmark = Bookmark.add("http://testing.com", "Test Title")
+      expect(bookmark.id).to eq persisted_data(bookmark.id)['id']
+      expect(bookmark.url).to eq "http://testing.com"
+      expect(bookmark.title).to eq "Test Title"
     end
   end
 
@@ -26,8 +27,8 @@ describe Bookmark do
       add_test_bookmarks
       bookmark_ids = []
       Bookmark.all.each { |bookmark| bookmark_ids << bookmark.id }
-      Bookmark.delete()
-      expect(bookmark_ids).not_to include(id)
+      Bookmark.delete(1)
+      expect(bookmark_ids).not_to include(1)
     end
   end
 end

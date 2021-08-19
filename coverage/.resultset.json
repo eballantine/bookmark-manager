@@ -8,11 +8,27 @@
           1,
           1,
           1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/eb/Projects/week4/bookmark-manager/spec/features/delete_bookmark_spec.rb": {
+        "lines": [
           1,
           1,
           1,
           1,
           1,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -74,6 +90,17 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
           null,
           null,
           null
@@ -82,13 +109,19 @@
       "/Users/eb/Projects/week4/bookmark-manager/spec/web_helper_spec.rb": {
         "lines": [
           1,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1629382901
+    "timestamp": 1629386946
   }
 }

@@ -1,7 +1,7 @@
 require 'pg'
 
 class Bookmark
-  attr_reader :url, :title
+  attr_reader :id, :url, :title
 
   def initialize(id, url, title)
     @id = id
@@ -19,6 +19,11 @@ class Bookmark
     connect_db
     result = @connection.exec_params("INSERT INTO bookmarks (url, title) VALUES ($1, $2) RETURNING id, title, url;", [url, title])
     Bookmark.new(result[0]['id'], url, title)
+  end
+
+  def self.delete(id)
+    connect_db
+    @connection.exec_params("DELETE FROM bookmarks WHERE id=$1;", [id])
   end
 
   private
