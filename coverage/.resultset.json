@@ -12,6 +12,7 @@
           1,
           1,
           1,
+          1,
           null,
           null
         ]
@@ -42,9 +43,6 @@
           null,
           null,
           1,
-          1,
-          1,
-          null,
           1,
           null,
           1,
@@ -84,8 +82,17 @@
           null,
           null
         ]
+      },
+      "/Users/eb/Projects/week4/bookmark-manager/spec/web_helper_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1629305501
+    "timestamp": 1629379646
   }
 }
