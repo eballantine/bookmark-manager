@@ -8,7 +8,10 @@ class BookmarkManager < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  enable :method_override
+
   get '/' do
+    @list = Bookmark.all
     erb :index
   end 
   
@@ -17,8 +20,8 @@ class BookmarkManager < Sinatra::Base
     erb :bookmarks
   end
 
-  get '/add' do
-    erb :add
+  get '/bookmarks/add' do
+    erb :'bookmarks/add'
   end
 
   post '/bookmarks/add' do
@@ -27,10 +30,11 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks/delete' do
-    erb :delete
+    @list = Bookmark.all
+    erb :'bookmarks/delete'
   end
 
-  post '/bookmarks/delete' do 
+  delete '/bookmarks/delete' do 
     Bookmark.delete(params[:id])
     redirect('/')
   end
