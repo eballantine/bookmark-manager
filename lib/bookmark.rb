@@ -9,7 +9,7 @@ class Bookmark
 
   def self.add(url, title)
     connect_db
-    @connection.exec("INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}')")
+    @connection.exec_params("INSERT INTO bookmarks (url, title) VALUES ($1, $2);", [url, title])
   end
 
   private
