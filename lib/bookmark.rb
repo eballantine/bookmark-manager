@@ -3,7 +3,8 @@ require 'pg'
 class Bookmark
   attr_reader :url, :title
 
-  def initialize(url, title)
+  def initialize(id, url, title)
+    @id = id
     @url = url
     @title = title
   end
@@ -11,7 +12,7 @@ class Bookmark
   def self.all
     connect_db
     @bookmarks = @connection.exec('SELECT * FROM bookmarks')
-    @list = @bookmarks.map { |bookmark| Bookmark.new(bookmark['url'], bookmark['title'])}
+    @list = @bookmarks.map { |bookmark| Bookmark.new(bookmark ['id'], bookmark['url'], bookmark['title'])}
   end
 
   def self.add(url, title)
