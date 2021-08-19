@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/yousuf/Projects/bookmark-manager/spec/features/add_bookmark_spec.rb": {
+      "/Users/eb/Projects/week4/bookmark-manager/spec/features/add_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -17,7 +17,7 @@
           null
         ]
       },
-      "/Users/yousuf/Projects/bookmark-manager/spec/features/index_page_spec.rb": {
+      "/Users/eb/Projects/week4/bookmark-manager/spec/features/index_page_spec.rb": {
         "lines": [
           1,
           null,
@@ -35,7 +35,7 @@
           null
         ]
       },
-      "/Users/yousuf/Projects/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
+      "/Users/eb/Projects/week4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -52,7 +52,7 @@
           null
         ]
       },
-      "/Users/yousuf/Projects/bookmark-manager/spec/unit/bookmark_spec.rb": {
+      "/Users/eb/Projects/week4/bookmark-manager/spec/unit/bookmark_spec.rb": {
         "lines": [
           1,
           null,
@@ -60,12 +60,7 @@
           1,
           1,
           1,
-          null,
-          null,
           1,
-          1,
-          1,
-          null,
           1,
           null,
           1,
@@ -74,6 +69,7 @@
           null,
           null,
           null,
+          1,
           1,
           1,
           1,
@@ -83,16 +79,16 @@
           null
         ]
       },
-      "/Users/yousuf/Projects/bookmark-manager/spec/web_helper_spec.rb": {
+      "/Users/eb/Projects/week4/bookmark-manager/spec/web_helper_spec.rb": {
         "lines": [
           1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
           null
         ]
       }
     },
-    "timestamp": 1629381334
+    "timestamp": 1629382901
   }
 }
